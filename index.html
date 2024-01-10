@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Riddhima's Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/x-icon" href="duckiee.ico">
+	<meta name="Riddhima's Portfolio" content="Riddhima's Portfolio">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
+
 <body>
-    hello world
+
+	<div class="intro">	
+		<div class="ribbon">
+			<img id="logo-icon" src="logo.png" alt="Website logo">
+			<nav id="top-bar">
+				<a href="/html/">About Me</a> 
+				<a href="/css/">Projects</a>
+				<a href="/js/">Hobbies</a>
+			</nav>
+			<button id="dark-mode">
+				<span class="material-symbols-outlined"> brightness_4 </span>			
+			</button>
+
+			<span id="menu-icon" class="material-symbols-outlined"> menu </span>
+			
+		</div>
+		
+	<h1>Welcome to my Website!</h1>
+	</div>
+	
+	
+	<div class="about-me">
+		
+		<h2>About Me</h2>
+		<p>My name is Riddhima. I am a Computer Science student at Toronto Metropolitan University; currently in third year.</p>
+		
+	</div>
+
+	<div class="projects">
+
+		<h2>Projects</h2>
+		<p>My name is Riddhima. I am a Computer Science student at Toronto Metropolitan University; currently in third year.</p>
+
+	</div>
+
+	<script>
+		document.getElementById('menu-icon').addEventListener('click', function() {
+			var topBar = document.getElementById('top-bar');
+			topBar.classList.toggle('show-menu');
+		});
+	</script>
+
+
 </body>
+
+<footer style="font-size:10px;">
+	<br><br><hr><br>
+	Thank you for visiting!
+	<br><br>
+	© Riddhima Garg 2023
+</footer>
+	
 </html>
