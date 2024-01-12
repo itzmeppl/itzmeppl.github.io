@@ -7,6 +7,6 @@ document.getElementById('menu-icon').addEventListener('click', function() {
 
 
 // dark mode and light mode
-document.getElementById('re-theme').addEventListener('click', function() {
+document.getElementById('dark-mode').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 });
