@@ -4,15 +4,14 @@ html {
 }
 
 body{
-	/*background-color: rgb(61, 156, 209); */
-	background-color:rgb(135, 206, 232);
+	/* background-color:rgb(135, 206, 232); */
+	background-color:rgb(191, 165, 132);
 	transition: background-color 0.3s, color 0.3s;
 }
 
 #logo-icon{	width:auto; height:120px; }
 
 #top-bar a {
-	/* color: #f2f2f2; */
 	color: #2c2a2a;
 	text-decoration: none;
 	padding: 10px;
@@ -20,10 +19,10 @@ body{
 }
 
 #top-bar a:hover { 
-	background-color: rgba(255, 211, 26, 0.5); 
+	background-color: rgba(125, 57, 98, 0.5); 
 	color: #2c2a2a; 
 	border-radius:8px;
-	border: 1px solid rgba(255, 211, 26, 0.8);
+	border: 1px solid rgba(84, 38, 66, 0.8);
 }
 
 .ribbon{
@@ -33,7 +32,7 @@ body{
 	top: 0;
 	align-items: center;
 	padding: 10px;
-	background-color: rgba(135, 206, 232, 0.5);
+	background-color: rgba(125, 57, 98, 0.5);
 }
 
 .intro {
@@ -52,7 +51,7 @@ h1{
 	padding: 50px;
 	text-align: center;
 	font-family: 'Silkscreen', sans-serif;
-	color: rgb(255, 211, 26);
+	color: rgb(125, 57, 98);
 	text-shadow: 2px 2px #222020;
 	font-size:calc(8px + 6vw);
 }
@@ -68,7 +67,7 @@ h1{
 		position: absolute;
 		top: 80px; /* Adjust the top position as needed */
 		left: 0;
-		background-color: rgba(135, 206, 232, 0.5);
+		background-color: rgba(191, 165, 132, 0.5);
 		width: 100%;
 	}
 	#top-bar.show-menu {
