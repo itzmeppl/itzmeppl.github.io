@@ -97,9 +97,9 @@ h1{
 .dark-mode #top-bar a:hover { 
 	color: #fff; 
 }
-.dark-mode h1{
-	color: rgb(84, 38, 66);
-}
 .dark-mode .ribbon{
 	background-color: rgba(45, 49, 84, 0.5);
+}
+.dark-mode h1{
+	color: rgb(84, 38, 66);
 }
