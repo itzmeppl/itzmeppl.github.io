@@ -15,7 +15,17 @@
 </head>
 
 <body>
-	<script src="script.js"></script>
+	<script>
+		document.getElementById('menu-icon').addEventListener('click', function() {
+			var topBar = document.getElementById('top-bar');
+			topBar.classList.toggle('show-menu');
+		});
+
+		// dark mode and light mode
+		document.getElementById('dark-mode').addEventListener('click', function() {
+			document.body.classList.toggle('dark-mode');
+		});
+	</script>
 
 	<div class="intro">	
 		<div class="ribbon">
