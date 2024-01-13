@@ -87,19 +87,19 @@ h1{
     position: absolute;
     right: 14%;
 }
-
 .dark-mode {
     background-color: rgb(45, 49, 84);
     color: #fff;
 }
-
 .dark-mode #top-bar a {
 	color: #fff;
 }
 .dark-mode #top-bar a:hover { 
 	color: #fff; 
 }
-
+.dark-mode h1{
+	color: rgb(84, 38, 66);
+}
 .dark-mode .ribbon{
 	background-color: rgba(45, 49, 84, 0.5);
 }
