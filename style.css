@@ -4,7 +4,6 @@ html {
 }
 
 body{
-	/* background-color:rgb(135, 206, 232); */
 	background-color:rgb(191, 165, 132);
 	transition: background-color 0.3s, color 0.3s;
 }
@@ -20,7 +19,7 @@ body{
 
 #top-bar a:hover { 
 	background-color: rgba(125, 57, 98, 0.5); 
-	color: #2c2a2a; 
+	color: #fff; 
 	border-radius:8px;
 	border: 1px solid rgba(84, 38, 66, 0.8);
 }
