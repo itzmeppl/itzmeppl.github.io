@@ -90,16 +90,24 @@ h1{
     right: 14%;
 }
 
-.light-mode {
-    background-color: rgb(135, 206, 232);
-    color: #333;
-}
-
 .dark-mode {
     background-color: rgb(45, 49, 84);
     color: #fff;
 }
 
-.dark-mode #top-bar a { color: #fff; }
-.dark-mode #top-bar a:hover { color: #fff;}
-.dark-mode .ribbon{ background-color: rgba(45, 49, 84, 0.5); }
+.dark-mode #top-bar a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 18px;
+}
+.dark-mode #top-bar a:hover { 
+	background-color: rgba(255, 211, 26, 0.5); 
+	color: #fff; 
+	border-radius:8px;
+	border: 1px solid rgba(255, 211, 26, 0.8);
+}
+
+.dark-mode .ribbon{
+	background-color: rgba(45, 49, 84, 0.5);
+}
