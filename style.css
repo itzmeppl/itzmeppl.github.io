@@ -97,15 +97,10 @@ h1{
 
 .dark-mode #top-bar a {
 	color: #fff;
-	text-decoration: none;
-	padding: 10px;
-	font-size: 18px;
 }
 .dark-mode #top-bar a:hover { 
-	background-color: rgba(255, 26, 247, 0.5); 
+	background-color: rgba(255, 211, 26, 0.5); 
 	color: #fff; 
-	border-radius:8px;
-	border: 1px solid rgba(255, 211, 26, 0.8);
 }
 
 .dark-mode .ribbon{
