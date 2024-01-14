@@ -59,7 +59,7 @@ h1{
 	visibility: hidden;
 }
 
-@media only screen and (max-width: 605.98px) {
+@media only screen and (max-width: 620.98px) {
 	#top-bar {
 		display: none; /* Hide the menu by default on small screens */
 		flex-direction: column; /* Stack items vertically */
