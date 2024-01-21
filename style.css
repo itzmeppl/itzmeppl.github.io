@@ -12,7 +12,7 @@ body{
 #logo-icon{	width:auto; height:120px;}
 
 #top-bar a {
-	color: #2c2a2a;
+	color: #e8e8e8; 
 	font-size: 3.2vw;
 	text-decoration: none;
 	padding: 10px;
@@ -20,10 +20,9 @@ body{
 }
 
 #top-bar a:hover { 
-	background-color: rgba(125, 57, 98, 0.5); 
-	color: #f7f7f7; 
+	background-color: rgb(171, 100, 101); 
 	border-radius:8px;
-	border: 1px solid rgba(84, 38, 66, 0.8);
+	border: 1px solid rgb(171, 100, 101);
 }
 
 .ribbon{
@@ -33,17 +32,20 @@ body{
 	top: 0;
 	align-items: center;
 	padding: 10px;
-	background-color: rgba(191, 165, 132, 0.5);
+	background-color: rgba(171, 100, 101, 0.5);
 }
 
 .intro {
-	/* background-image:url('bg2.png'); */
 	background-image:url('lotus-water.gif');
 	background-size: cover;
 	background-position: center;
 	max-width: 100%;
-	height: auto;
+	height: 65vh;
 	width: auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 
 }
 
@@ -52,47 +54,18 @@ h1{
 	margin: 15px;
 	padding: 50px;
 	font-family: 'Silkscreen', sans-serif;
-	color: rgb(255,255,255);
+	color: #e8e8e8;
 	text-shadow: 2px 2px #222020;
 	mix-blend-mode: difference;
 	font-size:calc(8px + 6vw);
 }
-
 h2{
 	font-size: 2em;
 }
 
-
-
 #menu-icon{
 	visibility: hidden;
 }
-
-@media only screen and (max-width: 625.98px) {
-	#top-bar {
-		display: none; /* Hide the menu on small screens */
-		flex-direction: column; /* Stack vertically */
-		position: absolute;
-		top: 80px; /* Adjust the top position as needed */
-		right: 1%;
-		background-color: rgba(191, 165, 132, 0.7);
-		width: 75%;
-	}
-	#top-bar.show-menu {
-		display: flex; /* Show the menu when the show-menu class is applied */
-	}
-	#menu-icon {
-		cursor: pointer;
-		visibility: visible;
-		position: absolute; right: 5%;
-	}
-}
-@media only screen and (max-width: 399.98px) {
-	.flex-container{
-		display: flex;
-		flex-direction: column;
-	}
-}	
 
 #dark-mode {
 		border: none;
@@ -104,43 +77,78 @@ h2{
 }
 .dark-mode {
 		background-color: rgb(45, 49, 84);
-		color: #f7f7f7;
+		color: #e8e8e8;
 }
 .dark-mode #top-bar a {
-	color: #f7f7f7;
+	color: #e8e8e8;
 }
 .dark-mode #top-bar a:hover { 
-	color: #f7f7f7; 
+	color: #e8e8e8; 
+	background-color: rgb(125, 57, 98); 
+	border: rgb(125, 57, 98);
 }
 .dark-mode .ribbon{
-	background-color: rgba(45, 49, 84, 0.5);
+	background-color: rgba(125, 57, 98, 0.4);
 }
+
 .dark-mode h1{
 	color: rgb(191, 165, 132); 
 	text-shadow: 2px 2px rgb(45, 49, 84);
 }
+.dark-mode #about-me{
+	background-color: rgba(125, 57, 98, 0.7);
+}
 
 #profile-pic{
 	width: 100%;
-	min-width: 200px;
-	max-width: 300px; 
+	min-width: 250px;
+	max-width: 350px; 
 	height:auto;
 	border-radius: 3%;
 }
 
 #about-me{
-	background-color: rgb(183, 150, 108);
-	padding: 2px;
+	background-color: rgb(171, 100, 101, 0.6);
+	padding: 10px;
+	margin: 2%;
 }
 
 .flex-container{
 	display: flex;
 	flex-direction: row;
 	padding: 10px;
-	gap: 10px 10px;
+	gap: 15px 15px;
 
 }
 .flex-item{
 	align-self: center;
 
 }
+
+/*  */
+@media only screen and (max-width: 625.98px) {
+	#top-bar {
+		display: none; /* Hide the menu on small screens */
+		flex-direction: column; /* Stack vertically */
+		position: absolute;
+		top: 85px; /* Adjust the top position as needed */
+		right: 1%;
+		background-color: rgba(171, 100, 101, 0.5);
+		width: 75%;
+	}
+	.dark-mode #top-bar{ background-color: rgba(125, 57, 98, 0.5); }
+	#top-bar.show-menu {
+		display: flex; /* Show the menu when the show-menu class is applied */
+	}
+	#menu-icon {
+		cursor: pointer;
+		visibility: visible;
+		position: absolute; right: 5%;
+	}
+}
+@media only screen and (max-width: 499.98px) {
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+	}
+}	
