@@ -113,6 +113,19 @@ h2{
 	margin: 2%;
 }
 
+#projects{
+	background-color: rgb(85, 107, 88, 0.6);
+	padding: 10px;
+	margin: 2%;
+}
+
+#hobbies{
+	background-color: rgb(171, 100, 101, 0.6);
+	padding: 10px;
+	margin: 2%;
+}
+
+
 .flex-container{
 	display: flex;
 	flex-direction: row;
