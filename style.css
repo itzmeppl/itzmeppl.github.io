@@ -32,7 +32,7 @@ body{
 	top: 0;
 	align-items: center;
 	padding: 10px;
-	background-color: rgba(171, 100, 101, 0.5);
+	background-color: rgba(85, 107, 88, 0.5);
 }
 
 .intro {
@@ -88,7 +88,7 @@ h2{
 	border: rgb(125, 57, 98);
 }
 .dark-mode .ribbon{
-	background-color: rgba(85, 107, 88, 0.4);
+	background-color: rgba(125, 57, 98, 0.4);
 }
 
 .dark-mode h1{
