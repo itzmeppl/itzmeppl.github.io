@@ -69,7 +69,8 @@ h2{
 
 #profile-pic{
 	width: 100%;
-	min-width: 250px;
+	min-width: 200px;
+	width: 300px;
 	max-width: 340px; 
 	height:auto;
 	border-radius: 3%;
@@ -78,19 +79,21 @@ h2{
 #about-me{
 	background-color: rgb(171, 100, 101, 0.6);
 	padding: 10px;
-	margin-top: 2%; 
+	margin-top: 0.5%; 
 }
 
 #projects{
 	background-color: rgb(85, 107, 88, 0.6);
 	padding: 10px;
-	margin: 0%;
+	margin-top: 0.5%;
+
 }
 
 #hobbies{
 	background-color: rgb(171, 100, 101, 0.6);
 	padding: 10px;
-	margin: 0%;
+	margin-top: 0.5%;
+
 }
 
 
@@ -122,7 +125,7 @@ h2{
 	color: rgb(191, 165, 132); 
 	text-shadow: 2px 2px rgb(45, 49, 84);
 }
-.dark-mode #about-me{
+.dark-mode #about-me #hobbies{
 	background-color: rgba(125, 57, 98, 0.7);
 }
 
