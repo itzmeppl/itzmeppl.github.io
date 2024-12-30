@@ -4,7 +4,8 @@ html {
 }
 
 body{
-	background-color:rgb(191, 165, 132);
+	background-color:rgb(179, 219, 226);
+
 	transition: background-color 0.3s, color 0.3s;
 	margin: 10px;
 }
@@ -33,6 +34,8 @@ body{
 	align-items: center;
 	padding: 10px;
 	background-color: rgba(171, 100, 101, 0.5);
+	background-color: rgba(97, 143, 176, 0.5);
+
 }
 
 .intro {
@@ -77,12 +80,14 @@ h2{
 
 #about-me{
 	background-color: rgb(171, 100, 101, 0.6);
+	background-color: #a94e5d99;
 	padding: 10px;
 	margin-top: 0.5%; 
 }
 
 #projects{
-	background-color: rgb(85, 107, 88, 0.6);
+	background-color: rgba(59, 118, 67, 0.6);
+
 	padding: 10px;
 	margin-top: 0.5%;
 
