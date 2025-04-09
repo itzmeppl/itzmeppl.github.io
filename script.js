@@ -12,16 +12,13 @@ document.getElementById('dark-mode').addEventListener('click', function() {
 });
 
 
-let currentIndex = 0;
-
-function moveSlide(direction) {
-  const slides = document.querySelector('.carousel-slides');
-  const totalItems = document.querySelectorAll('.carousel-item').length;
-
-  currentIndex += direction;
-
-  if (currentIndex < 0) currentIndex = totalItems - 1;
-  if (currentIndex >= totalItems) currentIndex = 0;
-
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+function scrollCarousel(direction) {
+    const track = document.getElementById('carousel-track');
+    const scrollAmount = 260; // width of item + gap
+  
+    track.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+  
