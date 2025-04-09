@@ -103,7 +103,8 @@ h2{
 /*PROJECTS CAROUSEL*/
 .carousel {
 	position: relative;
-	max-width: 500px;
+	width: 100%;
+	max-width: 90vw; /* carousel will be at most 90% of the viewport width */
 	margin: auto;
 	overflow: hidden;
 	border-radius: 10px;
@@ -158,6 +159,7 @@ h2{
 	background-color: rgba(0,0,0,0.8);
   }
   
+	
 /* DARK MODE */
 #dark-mode {
 		border: none;
