@@ -100,7 +100,65 @@ h2{
 
 }
 
-
+/*PROJECTS CAROUSEL*/
+.carousel {
+	position: relative;
+	max-width: 500px;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .carousel-slides {
+	display: flex;
+	transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+	min-width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+  }
+  
+  .carousel-item img {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  .carousel-item p {
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #f9f9f9;
+  }
+  
+  .carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.5);
+	border: none;
+	color: white;
+	font-size: 2rem;
+	padding: 5px 10px;
+	cursor: pointer;
+	z-index: 1;
+  }
+  
+  .carousel-btn.prev {
+	left: 10px;
+  }
+  
+  .carousel-btn.next {
+	right: 10px;
+  }
+  
+  .carousel-btn:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+/* DARK MODE */
 #dark-mode {
 		border: none;
 		border-radius: 8px;
