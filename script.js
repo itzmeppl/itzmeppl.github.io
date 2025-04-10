@@ -13,9 +13,8 @@ document.getElementById('dark-mode').addEventListener('click', function() {
 
 
 function scrollCarousel(direction) {
-    const track = document.getElementById('carousel-track');
-    const scrollAmount = 260; // width of item + gap
-  
+    const track = document.getElementById("carouselTrack");
+    const scrollAmount = 270; // adjust to your card width + gap
     track.scrollBy({
       left: direction * scrollAmount,
       behavior: 'smooth'
