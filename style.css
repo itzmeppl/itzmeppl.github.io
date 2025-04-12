@@ -115,11 +115,33 @@ h2{
 	margin-top: 0.5%;
 
 }
-#cert .flex-container {
+#certs .flex-container {
     display: flex;
-    flex-direction: row; /* Ensure items are in a row */
-    gap: 10px; /* Optional: Add spacing between items */
+    flex-direction: row;
+	flex-wrap: wrap;
+    gap: 10px; /* Space between items */
 }
+
+#certs .flex-item {
+	background-color: rgba(171, 100, 101, 0.8);
+	padding: 1%;
+    flex: 1;
+	display: flex; /* Make each item a flex container */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+}
+#certs .flex-item p {
+    max-width: 30vw; /* Limit the width to 35% of the viewport */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure text wraps within the container */
+    white-space: normal; /* Allow text to wrap to the next line */
+    text-align: center; /* Optional: Center-align the text */
+	font-size: calc(10px + 0.5vw);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
 .certs-img{
 	width: auto;
 	height: auto;
@@ -256,10 +278,14 @@ h2{
 	color: rgb(191, 165, 132); 
 	text-shadow: 2px 2px rgb(45, 49, 84);
 }
-.dark-mode #about-me #certs{
+.dark-mode #about-me 
+.dark-mode #certs{
 	background-color: rgba(125, 57, 98, 0.7);
 }
 
+.dark-mode #certs .flex-item {
+	background-color: rgba(125, 57, 98, 0.7);
+}
 .dark-mode .carousel-card {
 	background: rgba(96, 146, 102, 0.707);
 	box-shadow: 0 4px 12px rgba(252, 252, 252, 0.1);
@@ -269,7 +295,6 @@ h2{
     color: #e8e8e8;
 	background-color: rgb(121, 160, 127);
 }
-
 .flex-container{
 	display: flex;
 	flex-direction: row;
