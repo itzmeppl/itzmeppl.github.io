@@ -18,7 +18,7 @@ document.getElementById("resume-link").addEventListener("click", function (event
 
   // Replace the content of #main-content with an iframe to display the PDF
   document.getElementById("body").innerHTML = `
-    <iframe src="resume_a25.pdf" style="width: 98vw; height: 98vh; border: none;"></iframe>
+    <iframe src="resume_a25.pdf" style="width: 98vw; height: 98vh; border: none; "></iframe>
     <button id="back-button" style="position: fixed; top: 10px; left: 10px; z-index: 4; padding: 10px; background:rgb(83, 155, 167); color: white; border: none; border-radius: 5px; cursor: pointer;">Back</button>
   `;
 
