@@ -334,14 +334,13 @@ h2{
 	color: rgb(191, 165, 132); 
 	text-shadow: 2px 2px rgb(45, 49, 84);
 }
-.dark-mode #about-me 
-.dark-mode #certs{
+.dark-mode #about-me, 
+.dark-mode #certs,
+.dark-mode #certs .flex-item{
 	background-color: rgba(125, 57, 98, 0.7);
 }
 
-.dark-mode #certs .flex-item {
-	background-color: rgba(125, 57, 98, 0.7);
-}
+
 .dark-mode .carousel-card {
 	background: rgba(96, 146, 102, 0.707);
 	box-shadow: 0 4px 12px rgba(252, 252, 252, 0.1);
@@ -351,6 +350,21 @@ h2{
     color: #e8e8e8;
 	background-color: rgb(121, 160, 127);
 }
+
+.dark-mode .timeline-content {
+	background: rgba(96, 146, 102, 0.707);
+}
+.dark-mode .timeline {
+    border-left: 2px solid #e8e8e8;
+}
+.dark-mode .timeline-content h3,
+.dark-mode .timeline-content p,
+.dark-mode .timeline-content ul,
+.dark-mode .timeline-date  {
+	color: #e8e8e8;
+}
+
+
 .flex-container{
 	display: flex;
 	flex-direction: row;
@@ -364,7 +378,9 @@ h2{
 }
 
 /*  */
-@media only screen and (max-width: 720px) {
+
+
+@media only screen and (max-width: 800px) {
 	#top-bar {
 		display: none; /* Hide the menu on small screens */
 		flex-direction: column; /* Stack vertically */
@@ -383,6 +399,10 @@ h2{
 		visibility: visible;
 		position: absolute; right: 5%;
 	}
+}
+
+@media only screen and (max-width: 700px) {
+
 	#profile-pic{
 		max-width: 50vw; 
 	}
@@ -395,5 +415,9 @@ h2{
 	.flex-container{
 		display: flex;
 		flex-direction: column;
+	}
+	#certs .flex-item p,
+	#about-me-text {
+		font-size : calc(10px + 1vw);
 	}
 }
