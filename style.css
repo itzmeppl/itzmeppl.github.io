@@ -235,13 +235,13 @@ h2{
 }
 
 .dark-mode .carousel-card {
-	background: rgba(96, 146, 102, 0.79);
+	background: rgba(96, 146, 102, 0.707);
 	box-shadow: 0 4px 12px rgba(252, 252, 252, 0.1);
 }
-.dark-mode,
-.rating,
-.programming_tools {
-	color: #e8e8e8;
+.dark-mode .rating,
+.dark-mode .programming_tools {
+    color: #e8e8e8;
+	background-color: rgb(121, 160, 127);
 }
 
 .flex-container{
