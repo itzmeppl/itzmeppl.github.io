@@ -75,8 +75,7 @@ h2{
 
 #profile-pic{
 	width: 100%;
-	min-width: 250px;
-	max-width: 340px; 
+	max-width: 30vw; 
 	height:auto;
 	border-radius: 3%;
 }
@@ -87,6 +86,20 @@ h2{
 	padding: 10px;
 	margin-top: 0.5%; 
 }
+#about-me .flex-container {
+    display: flex;
+    flex-direction:wrap; /* Ensure items are in a row */
+    gap: 20px; /* Optional: Add spacing between items */
+}
+
+#about-me .flex-item:first-child {
+    flex: 0 0 35%; /* Image takes 40% of the space */;
+}
+#about-me-text{
+	font-family: 'Cambria', 'Cooper Black', 'Comic Sans MS', 'Comic Sans', cursive;
+	font-size: calc(10px + 0.8vw);
+
+}
 
 #projects{
 	background-color: rgba(59, 118, 67, 0.6);
@@ -96,12 +109,25 @@ h2{
 
 }
 
-#hobbies{
+#certs{
 	background-color: rgb(171, 100, 101, 0.6);
 	padding: 10px;
 	margin-top: 0.5%;
 
 }
+#cert .flex-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    gap: 10px; /* Optional: Add spacing between items */
+}
+.certs-img{
+	width: auto;
+	height: auto;
+	max-width: 35vw; 
+	max-height:45vh;
+	border-radius: 3%;
+}
+
 
 /*PROJECTS CAROUSEL*/
 .carousel-wrapper {
@@ -230,7 +256,7 @@ h2{
 	color: rgb(191, 165, 132); 
 	text-shadow: 2px 2px rgb(45, 49, 84);
 }
-.dark-mode #about-me #hobbies{
+.dark-mode #about-me #certs{
 	background-color: rgba(125, 57, 98, 0.7);
 }
 
@@ -257,7 +283,7 @@ h2{
 }
 
 /*  */
-@media only screen and (max-width: 625.98px) {
+@media only screen and (max-width: 720px) {
 	#top-bar {
 		display: none; /* Hide the menu on small screens */
 		flex-direction: column; /* Stack vertically */
@@ -276,7 +302,15 @@ h2{
 		visibility: visible;
 		position: absolute; right: 5%;
 	}
-
+	#profile-pic{
+		max-width: 50vw; 
+	}
+	.certs-img{
+		max-width: 50vw; 
+		max-height:45vh;
+	}
+	
+	
 	.flex-container{
 		display: flex;
 		flex-direction: column;
