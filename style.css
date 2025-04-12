@@ -109,54 +109,13 @@ h2{
 
 }
 
-#certs{
-	background-color: rgb(171, 100, 101, 0.6);
-	padding: 10px;
-	margin-top: 0.5%;
-
-}
-#certs .flex-container {
-    display: flex;
-    flex-direction: row;
-	flex-wrap: wrap;
-    gap: 10px; /* Space between items */
-}
-
-#certs .flex-item {
-	background-color: rgba(171, 100, 101, 0.8);
-	padding: 1%;
-    flex: 1;
-	display: flex; /* Make each item a flex container */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    text-align: center;
-}
-#certs .flex-item p {
-    max-width: 30vw; /* Limit the width to 35% of the viewport */
-    word-wrap: break-word; /* Break long words */
-    overflow-wrap: break-word; /* Ensure text wraps within the container */
-    white-space: normal; /* Allow text to wrap to the next line */
-    text-align: center; /* Optional: Center-align the text */
-	font-size: calc(10px + 0.5vw);
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-}
-
-.certs-img{
-	width: auto;
-	height: auto;
-	max-width: 35vw; 
-	max-height:45vh;
-	border-radius: 3%;
-}
-
 
 /*PROJECTS CAROUSEL*/
 .carousel-wrapper {
 	position: relative;
 	width: 97%;
 	overflow: hidden;
-	padding: 2%;
+	padding: 1%;
   }
   
 .carousel-track {
@@ -247,6 +206,94 @@ h2{
 
 .carousel-btn.next {
 	right: 5px;
+}
+
+/* CERTIFICATIONS */
+
+#certs{
+	background-color: rgb(171, 100, 101, 0.6);
+	padding: 10px;
+	margin-top: 0.5%;
+
+}
+#certs .flex-container {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+}
+
+#certs .flex-item {
+	background-color: rgba(171, 100, 101, 0.8);
+	border-radius: 10px;
+	box-shadow: rgb(171, 100, 101) 0px 0px 10px 0px;
+	padding: 1%;
+    flex: 1;
+	display: flex; /* Make each item a flex container */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+}
+#certs .flex-item p {
+    max-width: 30vw; 
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure text wraps within the container */
+    white-space: normal; /* Allow text to wrap to the next line */
+    text-align: center; /* Optional: Center-align the text */
+	font-size: calc(10px + 0.5vw);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+.certs-img{
+	width: auto;
+	height: auto;
+	max-width: 35vw; 
+	max-height:45vh;
+	border-radius: 3%;
+}
+
+
+
+
+/* Work exp */
+.work-history {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(45% - 20px); /* Adjust card width */
+    max-width: calc(45% - 20px);
+}
+
+.work-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.work-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.work-card ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #555;
 }
 	
 /* DARK MODE */
